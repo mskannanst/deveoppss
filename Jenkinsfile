@@ -20,7 +20,7 @@ pipeline {
 	    }
 		    stage('Example Deploy') {
             when {
-               if(branch =='production'
+               if(branch =='production')
 		  {
                    echo 'Deploying'
 		  }
