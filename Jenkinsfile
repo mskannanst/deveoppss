@@ -17,7 +17,7 @@ pipeline {
 	    {
 	    steps
 		    {
-	 if(branch=='production')
+	 if(branch 'production')
 			    {
 			    echo 'bad'
 			    }
