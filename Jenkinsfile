@@ -32,6 +32,6 @@ pipeline {
 	steps
 		    {
 		    echo "Hello ${params.PERSON}"
-		    }
+		    }   }
     }
   }
