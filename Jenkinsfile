@@ -17,10 +17,7 @@ pipeline {
 	    {
 	    steps
 		    {
-			    echo 'bad'
-		}
-	   steps
-		    {
+		    echo 'bad'
 		    echo 'good'
 		    }
 		    
