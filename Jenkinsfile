@@ -18,11 +18,10 @@ pipeline {
 	    stage('three')
 	    {
 	    steps
-		    {
+		{
 		    echo 'bad'
 		    echo 'good'
 		    }
-   }
-	    
+    
 	 }
 }
