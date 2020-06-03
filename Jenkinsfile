@@ -15,14 +15,15 @@ pipeline {
 	}
 	    stage('three')
 	    {
-	    when
+	    steps
 		    {
-	
-	 branch 'production'
-			    {
 			    echo 'bad'
-			    }
+		}
+	   steps
+		    {
+		    echo 'good'
 		    }
+		    
 	    }
     }
   }
