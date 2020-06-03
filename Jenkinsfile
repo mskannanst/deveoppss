@@ -18,6 +18,7 @@ pipeline {
 		options {
         timeout(time: 1, unit: 'HOURS')
 	    }
+	    }
 		    stage('Example Deploy') {
             when {
                if(branch =='production')
