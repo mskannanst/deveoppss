@@ -28,10 +28,11 @@ pipeline {
 	    {
 	     parameters {
         string(name: 'PERSON', defaultValue: 'Kannan', description: 'Who should I say hello to?')
-	     }
+	     
 	steps
 		    {
 		    echo "Hello ${params.PERSON}"
-		    }   }
+		    }  
+	     }
     }
   }
