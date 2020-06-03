@@ -23,12 +23,15 @@ pipeline {
 		    echo 'good'
 		    }
    }
+	    
 	    stage('four')
 	    {
-		    steps{
-		     sh 'echo "SSH private key is located at $SSH_CREDS"'
-                sh 'echo "SSH user is $SSH_CREDS_USR"'
-                sh 'echo "SSH passphrase is $SSH_CREDS_PSW"'
-		    }}
+	     parameters {
+        string(name: 'PERSON', defaultValue: 'Kannan', description: 'Who should I say hello to?')
+	     }
+	steps
+		    {
+		    echo "Hello ${params.PERSON}"
+		    }
     }
   }
