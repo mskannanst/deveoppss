@@ -20,8 +20,8 @@ pipeline {
 	    steps
 		{
 		    echo 'bad'
-		    echo 'good'
+		   
 		    }
-    
+	    }
 	 }
 }
