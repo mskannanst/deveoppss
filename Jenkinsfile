@@ -13,6 +13,6 @@ pipeline {
 		echo 'second stage'
 			sleep time:250 , unit: 'NANOSECONDS'
 		}
-			
+		}	
 	}
     }
